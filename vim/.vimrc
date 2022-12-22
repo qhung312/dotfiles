@@ -39,7 +39,7 @@ call vundle#end()
 set completeopt-=preview
 
 "Plugin settings
-set signcolumn=no
+set signcolumn=yes
 set background=light "Set dark or light theme
 colorscheme solarized
 
