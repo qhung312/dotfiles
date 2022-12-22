@@ -39,12 +39,9 @@ call vundle#end()
 set completeopt-=preview
 
 "Plugin settings
-set signcolumn=no
+set signcolumn=yes
 
 set background=light "Set dark or light theme
 colorscheme solarized
-highlight YcmErrorLine ctermbg=LightRed guibg=LightRed
-highlight YcmWarningLine ctermbg=LightYellow guibg=LightYellow
 
 let g:delimitMate_expand_cr=1
-
