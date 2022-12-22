@@ -31,14 +31,20 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'Raimondi/delimitMate'
 
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+
 call vundle#end()
 
 set completeopt-=preview
 
 "Plugin settings
 set signcolumn=no
+
 set background=light "Set dark or light theme
 colorscheme solarized
+highlight YcmErrorLine ctermbg=LightRed guibg=LightRed
+highlight YcmWarningLine ctermbg=LightYellow guibg=LightYellow
 
 let g:delimitMate_expand_cr=1
 
