@@ -25,7 +25,6 @@ Plugin 'preservim/nerdtree'
 "UI plugins
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'altercation/vim-colors-solarized'
 
 "Editor plugins
 Plugin 'ycm-core/YouCompleteMe'
@@ -39,8 +38,6 @@ call vundle#end()
 set completeopt-=preview
 
 "Plugin settings
-set signcolumn=yes
-set background=light "Set dark or light theme
-colorscheme solarized
+set signcolumn=no
 
 let g:delimitMate_expand_cr=1
