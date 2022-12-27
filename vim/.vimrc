@@ -25,6 +25,7 @@ Plugin 'preservim/nerdtree'
 "UI plugins
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'altercation/vim-colors-solarized'
 
 "Editor plugins
 Plugin 'ycm-core/YouCompleteMe'
@@ -39,12 +40,16 @@ set completeopt-=preview
 
 "Plugin settings
 if has("gui_running")
-        set guifont=DejaVu\ Sans\ Mono\ 13
-        set guioptions-=m
-        set guioptions-=T
+	set guifont=DejaVu\ Sans\ Mono\ 13
+	set guioptions-=m
+	set guioptions-=T
 endif
 
-set signcolumn=no
+set signcolumn=yes
+set background=light
+colorscheme solarized
+
+highlight! link SignColumn LineNr
 
 let g:delimitMate_expand_cr=1
 
