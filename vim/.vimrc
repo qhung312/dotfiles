@@ -8,7 +8,7 @@ set number
 set shiftwidth=4
 set tabstop=4
 set softtabstop=4
-"set expandtab "Converting tabs to spaces
+set expandtab
 set nobackup
 
 "Enable plugins
@@ -40,9 +40,9 @@ set completeopt-=preview
 
 "Plugin settings
 if has("gui_running")
-	set guifont=DejaVu\ Sans\ Mono\ 13
-	set guioptions-=m
-	set guioptions-=T
+    set guifont=DejaVu\ Sans\ Mono\ 13
+    set guioptions-=m
+    set guioptions-=T
 endif
 
 set signcolumn=yes
