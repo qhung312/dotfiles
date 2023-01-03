@@ -59,7 +59,7 @@ let mapleader=','
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader><space> :Files<CR>
 
-set pumheight=10
+set pumheight=12
 
 " May need for Vim (not Neovim) since coc.nvim calculates byte offset by count
 " utf-8 byte sequence
