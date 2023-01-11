@@ -25,7 +25,7 @@ Plugin 'preservim/nerdtree'
 "UI plugins
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'lifepillar/vim-solarized8'
 
 "Editor plugins
 Plugin 'ycm-core/YouCompleteMe'
@@ -46,8 +46,9 @@ if has("gui_running")
 endif
 
 set signcolumn=yes
+set termguicolors
 set background=light
-colorscheme solarized
+colorscheme solarized8
 
 highlight! link SignColumn LineNr
 
