@@ -1,19 +1,17 @@
 {
+    "suggest.noselect": true,
 
-"suggest.noselect": true,
+    "languageserver": {
+        "clangd": {
+            "command": "clangd-14",
+            "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
+            "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
 
-"languageserver": {
-  "clangd": {
-	"command": "clangd-14",
-	"rootPatterns": ["compile_flags.txt", "compile_commands.json"],
-	"filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
-
-	"clangd.arguments": [
-	  "--header-insertion=never",
-	  "--completion-style=bundled",
-	  "--function-arg-placeholders=false"
-	]
-  }
-}
-
+            "clangd.arguments": [
+                "--header-insertion=never",
+                "--completion-style=bundled",
+                "--function-arg-placeholders=false"
+            ]
+        }
+    }
 }
