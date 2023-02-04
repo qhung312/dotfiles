@@ -25,7 +25,7 @@ Plugin 'preservim/nerdtree'
 "UI plugins
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'lifepillar/vim-solarized8'
+Plugin 'morhetz/gruvbox'
 
 "Editor plugins
 Plugin 'neoclide/coc.nvim'
@@ -40,8 +40,8 @@ set completeopt-=preview
 
 set signcolumn=yes
 set termguicolors
-set background=light
-colorscheme solarized8
+set background=dark
+colorscheme gruvbox
 
 highlight! link SignColumn LineNr
 
