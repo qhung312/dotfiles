@@ -11,36 +11,31 @@ set softtabstop=4
 set nobackup
 
 "Enable plugins
-set rtp+=~/.vim/bundle/Vundle.vim
-
-call vundle#begin()
-
-"Vundle
-Plugin 'VundleVim/Vundle.vim'
-
+call plug#begin()
 "Navigation plugins
-Plugin 'preservim/nerdtree'
+Plug 'preservim/nerdtree'
 
 "UI plugins
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'lifepillar/vim-solarized8'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'lifepillar/vim-solarized8'
+Plug 'morhetz/gruvbox'
 
 "Editor plugins
-Plugin 'neoclide/coc.nvim'
-Plugin 'Raimondi/delimitMate'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'Raimondi/delimitMate'
 
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 
-call vundle#end()
+call plug#end()
 
 set completeopt-=preview
 
 set signcolumn=yes
 set termguicolors
-set background=light
-colorscheme solarized8
+set background=dark
+colorscheme gruvbox
 
 highlight! link SignColumn LineNr
 
